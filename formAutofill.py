@@ -19,12 +19,12 @@ import random
 
 class AutomateForm(object):
 
-    #Schedule the program to run every hour so as to annoy your representative until they respond
     def __init__(self, url):
         self.url = url
 
 
     def autoFillCollins(self):
+        #Send Ten emails, one each hour. Values can be adjusted to annoy representatives if needed.
         for x in range(10):
             #Open a new browser w/ Collins URL
             driver = webdriver.Chrome()

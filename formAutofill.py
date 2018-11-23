@@ -57,7 +57,7 @@ def autoFillCollins(url):
 
 
 
-#Schedule the program to run every 10 minutes so as to annoy your representative until they respond
+#Schedule the program to run every hour so as to annoy your representative until they respond
 def main_method():
     for x in range(10):
         #autoFillGoogle('https://docs.google.com/forms/d/e/1FAIpQLSdrqmqAdP_X5TzjNYlGr5Zo6sY_Q-rB6ATxa5Htd1QqZMYSQg/viewform?usp=sf_link')

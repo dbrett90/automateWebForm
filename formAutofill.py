@@ -36,7 +36,7 @@ class AutomateForm(object):
                 box = driver.find_element_by_xpath(key)
                 box.send_keys(xpath_dict[key])
 
-            #Fill in radio buttons (fuck subscribing to some shit)
+            #Fill in radio buttons - do NOT subscribe and currently not asking for a response
             driver.find_elements_by_css_selector("input[type = 'radio'][value = 'No']")[1].click()
 
             #Fill in State dropdown

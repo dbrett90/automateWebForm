@@ -47,7 +47,7 @@ def autoFillCollins(url):
     in_file = open("messageTemplates/"+myFile, "rt")
     contents = in_file.read()
     in_file.close()
-    print(contents)
+    #print(contents)
 
     message_box = driver.find_element_by_xpath('//*[@id="edit-submitted-please-write-your-message"]')
     message_box.send_keys(unicode(contents, errors = 'ignore'))

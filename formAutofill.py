@@ -113,8 +113,8 @@ class AutomateForm(object):
             message_box.send_keys(unicode(contents, errors = 'ignore'))
 
             #Submit information
-            submit_button = driver.find_element_by_xpath('//*[@id="EF6E3EF5-C2D4-9C1C-1649-BD1D51840BC3"]/div[6]/div/input')
-            submit_button.click()
+            #submit_button = driver.find_element_by_xpath('//*[@id="EF6E3EF5-C2D4-9C1C-1649-BD1D51840BC3"]/div[6]/div/input')
+            #submit_button.click()
 
 
             time.sleep(3600)
@@ -124,4 +124,4 @@ class AutomateForm(object):
 
 
 #collinsForm = AutomateForm('https://www.collins.senate.gov/contact').autoFillCollins()
-kingForm = AutomateForm('https://www.king.senate.gov/contact').autoFillKing()
+#kingForm = AutomateForm('https://www.king.senate.gov/contact').autoFillKing()

@@ -43,7 +43,7 @@ class AutomateForm(object):
         #Send Ten emails, one each hour. Values can be adjusted to annoy representatives if needed.
         for x in range(10):
             #Open a new browser w/ Collins URL
-            driver = webdriver.Chrome()
+            driver = webdriver.Chrome(executable_path="/home/daniel/chromedriver")
             driver.get(self.url)
 
             #Upload the normal fields
@@ -82,7 +82,7 @@ class AutomateForm(object):
         #Similar layout where 10 emails are sent, one each hour
         for x in range(10):
             #open a new browser w/ King URl
-            driver = webdriver.Chrome()
+            driver = webdriver.Chrome(executable_path="/home/daniel/chromedriver")
             driver.get(self.url)
 
             #upload all required fields that have short answer
@@ -123,5 +123,5 @@ class AutomateForm(object):
 
 
 
-#collinsForm = AutomateForm('https://www.collins.senate.gov/contact').autoFillCollins()
+collinsForm = AutomateForm('https://www.collins.senate.gov/contact').autoFillCollins()
 #kingForm = AutomateForm('https://www.king.senate.gov/contact').autoFillKing()

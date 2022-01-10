@@ -88,7 +88,7 @@ class AutomateForm(object):
             #Submit all information - uncomment this line in order to submit information from files
             submit_button = driver.find_element_by_xpath('//*[@id="webform-client-form-9020"]/div/div[16]/input')
             submit_button.click()
-            time.sleep(3600)
+            #time.sleep(3600)
         #pause for an hour
 
     def autoFillKing(self):
@@ -130,7 +130,7 @@ class AutomateForm(object):
             submit_button.click()
 
 
-            time.sleep(3600)
+            #time.sleep(3600)
     
     def autofillBooker(self):
         #Do 12 times so there is a good chance that all are selected
@@ -338,7 +338,12 @@ class AutomateForm(object):
 #     JerseyForm2 = AutomateForm('https://www.menendez.senate.gov/contact/email').autofillMenendez()
 #     time.sleep(3543)
 
+#Currently will run 10 times.
 for x in range(12):
+    collinsForm = AutomateForm('https://www.collins.senate.gov/contact').autoFillCollins()
+    kingForm = AutomateForm('https://www.king.senate.gov/contact').autoFillKing()
+    JerseyForm1 = AutomateForm('https://www.booker.senate.gov/contact/write-to-cory').autofillBooker()
+    JerseyForm2 = AutomateForm('https://www.menendez.senate.gov/contact/email').autofillMenendez()
     gillibrand = AutomateForm('https://www.gillibrand.senate.gov/contact/email-me').autofillGillibrand()
     Schumer = AutomateForm('https://www.schumer.senate.gov/contact/email-chuck').autofillSchumer()
     time.sleep(3543)

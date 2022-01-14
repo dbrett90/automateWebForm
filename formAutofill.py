@@ -168,6 +168,8 @@ class AutomateForm(object):
             box = driver.find_element_by_xpath(key)
             box.send_keys(xpath_dict[key])
         
+        #Pull a random message from the catalogue. If you have more than the two binary options
+        #you will need to expand the range of random.randint
         stringNum = str(random.randint(0,1))
         myFile = "genMessage"+stringNum+".txt"
 
